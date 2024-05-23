@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header_cont">
+            <div class="left_header_cont">
+                <div class="logo"><a href="/"><img src="img/logo.svg" alt="logo"></a></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="">Продукт</a></li>
+                        <li><a href="">Решения</a></li>
+                        <li><a href="">Ресурсы</a></li>
+                        <li><a href="">Предприятия</a></li>
+                        <li><a href="">Тарифы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right_header_cont">
+                <a href="#" class="btn_header" data-modal-target="#modal">Оставить заявку</a>
+            </div>
+            <div class="burger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Модальное окно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оставить заявку</h2>
+        <form id="applicationForm" method="post">
+            <label for="fullName">ФИО:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Например: Иванов Иван Иванович">
+            <label for="phone">Номер телефона:</label>
+            <input type="text" name="phone" id="phn_numb" required placeholder="+7 (777) 777-77-77">
+            <button type="submit" class="block_info_bottom_wrapper">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+    <div class="hero_block">
+        <div class="container">
+            <div class="left">
+                <div class="title_hero">Место для<br> командной<br> работы</div>
+                <div class="prg_hero">Интерактивная онлайн-доска для совместной<br> работы команд — в любое время, в любом месте.</div>
+                <form action="" method="post" class="form_block">
+                    <input type="email" placeholder="Электронная почта" required>
+                    <input type="submit" placeholder="Начать бесплатно">
+                </form>
+                <p class="prg_form">Всегда бесплатно — кредитная карта не нужна</p>
+                <div class="block_icon_bottom_form">
+                    <div class="left">
+                        <p>45M+ пользователей</p>
+                    </div>
+
+                    <div class="right">
+                        <img src="img/walwart.svg" alt="" style="width: 80px;">
+                        <img src="img/cisko.svg" alt="" style="width: 39px;">
+                        <img src="img/deloittle.svg" alt="" style="width: 55px;">
+                        <img src="img/volvo.svg" alt="" style="width: 30px; height: 30px;">
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="img/headerimage-without-text 1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="hero_block info_block">
+        <div class="container">
+            <div class="left">
+                <div class="title_hero">Работайте вместе, <br> где бы вы ни <br> находились</div>
+                <div class="prg_hero">Работая в офисе, удалённо или в гибридном формате, с Miro ваша команда может общаться, сотрудничать и совместно заниматься творчеством в одном пространстве, из любой точки мира.</div>
+                <a href="" class="btn_info_block" data-modal-target="#modal">Узнать больше</a>
+            </div>
+            <div class="right">
+                <img src="img/about.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="hero_block info_block_two">
+        <div class="container">
+            <div class="left">
+                <div class="title_hero">Закройте лишние вкладки — всё уже здесь</div>
+                <div class="prg_hero">Редактируете ли вы документы в Google Docs, работаете над задачами в Jira или созваниваетесь в Zoom, Miro предлагает более 100 интеграций с уже известными и полюбившимися вам инструментами.</div>
+                <a href="" class="btn_info_block" data-modal-target="#modal">Узнать больше</a>
+            </div>
+            <div class="right">
+                <img src="img/blockphoto2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--Подходит для вашего стиля работы-->
+
+    <div class="cont_style_word">
+        <div class="container">
+            <div class="title_cont_style_word">Подходит для вашего стиля работы</div>
+            <div class="tab_list_wrapper">
+                <ul class="tab__list">
+                    <li class="active_tab" data-tab="1">Мозговые штурмы</li>
+                    <li data-tab="2">Диаграммы</li>
+                </ul>
+            </div>
+
+            <div class="tab_contents">
+                <div class="tab_content active" data-content="1">
+                    <div class="hero_block tab_block">
+                        <div class="container">
+                            <div class="left">
+                                <div class="title_cont_tab">Мозговой штурм</div>
+                                <div class="prg_cont_tab">Генерируйте творческие идеи и развивайте их с помощью стикеров, изображений, интеллект-карт, видео, рисования и не только.</div>
+                                <a href="#" class="btn_cont_tab" data-modal-target="#modal">Узнать больше</a>
+                            </div>
+                            <div class="right">
+                                <img src="img/headerimage-without-text 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content" data-content="2">
+                    <div class="hero_block tab_block">
+                        <div class="container">
+                            <div class="left">
+                                <div class="title_cont_tab">Диаграммы</div>
+                                <div class="prg_cont_tab">Создавайте диаграммы и визуализируйте данные для лучшего понимания и анализа.</div>
+                                <a href="#" class="btn_cont_tab" data-modal-target="#modal">Узнать больше</a>
+                            </div>
+                            <div class="right">
+                                <img src="img/headerimage-without-text 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont_style_word">
+        <div class="container">
+            <div class="title_cont_style_word">Создан для всех типов команд</div>
+            <div class="tab_list_wrapper">
+                <ul class="tab__list">
+                    <li class="active_tab" data-tab="1">UX и дизайн</li>
+                    <li data-tab="2">Маркетинг</li>
+                </ul>
+            </div>
+
+            <div class="tab_contents">
+                <div class="tab_content active" data-content="1">
+                    <div class="hero_block tab_block">
+                        <div class="container">
+                            <div class="left">
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Создавайте вайрфреймы</p>
+                                </div>
+
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Подключайте заказчиков к <br> процессу дизайна</p>
+                                </div>
+
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Проводите вовлекающие <br> дизайн-воркшопы</p>
+                                </div>
+                                <a href="#" class="btn_cont_tab" data-modal-target="#modal">Узнать больше</a>
+
+                                <div class="icon_cont">
+                                    <p>Интегрируйте ваши любимые<br> инструменты</p>
+                                    <div class="icon_wrapper">
+                                        <img src="img/Vector.png" alt="icon">
+                                        <img src="img/Group 3.svg" alt="icon">
+                                        <img src="img/Vector (1).png" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/headerimage-without-text 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_content" data-content="2">
+                    <div class="hero_block tab_block">
+                        <div class="container">
+                            <div class="left">
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Создавайте вайрфреймы</p>
+                                </div>
+
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Подключайте заказчиков к <br> процессу дизайна</p>
+                                </div>
+
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Проводите вовлекающие <br> дизайн-воркшопы</p>
+                                </div>
+
+                                <div class="list_type">
+                                    <img src="img/icon.svg" alt="icon">
+                                    <p>Проводите вовлекающие <br> дизайн-воркшопы</p>
+                                </div>
+                                <a href="#" class="btn_cont_tab" data-modal-target="#modal">Узнать больше</a>
+
+                                <div class="icon_cont">
+                                    <p>Интегрируйте ваши любимые<br> инструменты</p>
+                                    <div class="icon_wrapper">
+                                        <img src="img/Vector.png" alt="icon">
+                                        <img src="img/Group 3.svg" alt="icon">
+                                        <img src="img/Vector (1).png" alt="icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <img src="img/headerimage-without-text 1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about_company">
+        <div class="container">
+           <div class="title_about_company">Почему и крупные, и небольшие компании доверяют Miro</div>
+           <a href="" class="btn_about_company">Связаться с отделом продаж</a>
+
+           <div class="info_about_compny_wrapper">
+              <div class="about_comp">
+                <div class="title_about_comp">ISO</div>
+                <div class="prg_about_comp">Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001</div>
+              </div>
+
+              <div class="about_comp">
+                <div class="title_about_comp">#1</div>
+                <div class="prg_about_comp">Платформа номер 1 для совместной работы, согласно отзывам на G2</div>
+              </div>
+
+              <div class="about_comp">
+                <div class="title_about_comp">#1</div>
+                <div class="prg_about_comp">Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001</div>
+              </div>
+
+              <div class="about_comp">
+                <div class="title_about_comp">ISO</div>
+                <div class="prg_about_comp">Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001</div>
+              </div>
+
+              <div class="about_comp">
+                <div class="title_about_comp">ISO</div>
+                <div class="prg_about_comp">Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001</div>
+              </div>
+
+              <div class="about_comp">
+                <div class="title_about_comp">ISO</div>
+                <div class="prg_about_comp">Miro cоответствует требованиям безопасности корпоративного уровня, согласно стандарту ISO-27001</div>
+              </div>
+           </div>
+        </div>
+    </div>
+
+    <!--Нравится лучшим командам мира-->
+
+    <div class="list_commands_wrapper">
+        <div class="container">
+            <div class="title_list_commands_wrapper">Нравится лучшим командам мира</h2>
+             <div class="all_news">Все истории клиентов</div>
+             <div class="list_news_wrapper">
+                <div class="news_cont">
+                    <div class="logo_company"><img src="img/logo_compamy.svg" alt="logo_compamy"></div>
+                    <div class="text_about_news">«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды<br> пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном режиме».</div>
+                    <div class="autor">
+                        <img src="https://www.distinguished-mag.com/storage/2022/12/QQ19-scaled.jpg" alt="">
+                        <div class="info_autor">
+                            <p class="name_autor">Роксанна Мустафа</p>
+                            <p class="position">Design Team Lead в VMware</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="news_cont">
+                    <div class="logo_company"><img src="img/logo_compamy.svg" alt="logo_compamy"></div>
+                    <div class="text_about_news">«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды<br> пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном режиме».</div>
+                    <div class="autor">
+                        <img src="https://www.distinguished-mag.com/storage/2022/12/QQ19-scaled.jpg" alt="">
+                        <div class="info_autor">
+                            <p class="name_autor">Роксанна Мустафа</p>
+                            <p class="position">Design Team Lead в VMware</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news_cont">
+                    <div class="logo_company"><img src="img/logo_compamy.svg" alt="logo_compamy"></div>
+                    <div class="text_about_news">«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды<br> пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном режиме».</div>
+                    <div class="autor">
+                        <img src="https://www.distinguished-mag.com/storage/2022/12/QQ19-scaled.jpg" alt="">
+                        <div class="info_autor">
+                            <p class="name_autor">Роксанна Мустафа</p>
+                            <p class="position">Design Team Lead в VMware</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news_cont">
+                    <div class="logo_company"><img src="img/logo_compamy.svg" alt="logo_compamy"></div>
+                    <div class="text_about_news">«Когда пришла пандемия, мы беспокоились, что креативность и продуктивность команды<br> пострадает, так как многие из нас привыкли работать в одной комнате. Но Miro оказался идеальным инструментом для совместной работы в удаленном режиме».</div>
+                    <div class="autor">
+                        <img src="https://www.distinguished-mag.com/storage/2022/12/QQ19-scaled.jpg" alt="">
+                        <div class="info_autor">
+                            <p class="name_autor">Роксанна Мустафа</p>
+                            <p class="position">Design Team Lead в VMware</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <!--Последний блок-->
+    <div class="container">
+        <div class="block_info_bottom_wrapper">
+            <div class="title_block_info_bootom_wrapper">Присоединяйтесь к 45M миллионам пользователей уже сегодня</div>
+            <p>Начните бесплатно и перейдите на другой тариф в любое <br> время. Хотите стать корпоративным клиентом?</p>
+            <a href="" data-modal-target="#modal">Оставить заявку</a>
+        </div>
+    </div>
+
+     <!--Подвал сайта-->
+
+     <footer class="footer">
+        <div class="container">
+            <div class="menu_footer_item">
+                <ul>
+                    <li class="title_menu_footer">Продукт</li>
+                    <li><a href="">О продукте</a></li>
+                    <li><a href="">Приложения и <br> интеграции</a></li>
+                    <li><a href="">Шаблоны</a></li>
+                    <li><a href="">Miroverse</a></li>
+                    <li><a href="">Платформа<br> Разработчика Miro</a></li>
+                    <li><a href="">Miro для устройств</a></li>
+                    <li><a href="">Безопасность и соответствие</a></li>
+                    <li><a href="">Доступность</a></li>
+                    <li><a href="">Журнал изменений</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title_menu_footer">Решения</li>
+                    <li><a href="">Встречи и воркшопы</a></li>
+                    <li><a href="">Мозговой штурм</a></li>
+                    <li><a href="">Agile методы в работе</a></li>
+                    <li><a href="">Диаграмминг</a></li>
+                    <li><a href="">Исследование</a></li>
+                    <li><a href="">Стратегия и <br> планирование</a></li>
+                    <li><a href="">Интеллект-карты</a></li>
+                    <li><a href="">Концептуальные карты</a></li>
+                    <li><a href="">Онлайн-стикеры</a></li>
+                    <li><a href="">Блок-схемы</a></li>
+                    <li><a href="">Вайрфреймы</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title_menu_footer">Ресурсы</li>
+                    <li><a href="">Академия Miro</a></li>
+                    <li><a href="">Служба поддержки</a></li>
+                    <li><a href="">Блог</a></li>
+                    <li><a href="">Статус</a></li>
+                    <li><a href="">Cообщество Miro</a></li>
+                    <li><a href="">Miro Professional Network</a></li>
+                    <li><a href="">Miro Эксперты</a></li>
+                    <li><a href="">Мероприятия Miro</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title_menu_footer">Компания</li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Карьера</a></li>
+                    <li><a href="">Miro в новостях</a></li>
+                    <li><a href="">Истории клиентов</a></li>
+                </ul>
+
+                <ul>
+                    <li class="title_menu_footer">Тарифы и планы</li>
+                    <li><a href="">Тарифы</a></li>
+                    <li><a href="">Бизнес</a></li>
+                    <li><a href="">Предприятия</a></li>
+                    <li><a href="">Консультанты</a></li>
+                    <li><a href="">Образование</a></li>
+                    <li><a href="">Стартапы</a></li>
+                    <li><a href="">Некоммерческие<br> организации</a></li>
+                </ul>
+            </div>
+
+            <hr class="line">
+
+            <div class="soclial_cont">
+                <div class="left">
+                    <ul>
+                        <li><a href=""><img src="img/Frame (1).svg" alt=""></a></li>
+                        <li><a href=""><img src="img/Frame (1).svg" alt=""></a></li>
+                        <li><a href=""><img src="img/Frame (1).svg" alt=""></a></li>
+                        <li><a href=""><img src="img/Frame (1).svg" alt=""></a></li>
+                        <li><a href=""><img src="img/Frame (1).svg" alt=""></a></li>
+                    </ul>
+                </div>
+
+                <div class="right">
+                    <p>© 2023 Miro</p>
+                    <p><a href="">Условия пользования</a></p>
+                    <p><a href="">Политика конфиденциальности</a></p>
+                    <p><a href="">Управление файлами cookies</a></p>
+                </div>
+            </div>
+
+            <div class="logo_footer_cont">
+                <a href=""><img src="img/appstore.svg" alt=""></a>
+                <a href=""><img src="img/googleplay.svg" alt=""></a>
+                <a href=""><img src="img/logofooter (2).svg" alt=""></a>
+
+            </div>
+        </div>
+     </footer>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var element = document.getElementById('phn_numb');
+        var mask = IMask(element, {
+        mask: '+{7} (000) 000-00-00'
+        });
+        const btn = document.getElementById('btn_sbmt');
+        btn.addEventListener('click', (event) => {
+        element.value = mask.unmaskedValue; 
+        });
+        });
+    </script>
+</body>
+</html>
