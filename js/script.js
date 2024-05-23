@@ -31,13 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Burger menu toggle
-    const burgerMenu = document.querySelector(".burger_menu");
-    const menu = document.querySelector(".menu");
-
-    burgerMenu.addEventListener("click", function () {
-        menu.classList.toggle("active");
-    });
 
     // Open modal on click
     document.querySelectorAll('[data-modal-target]').forEach(button => {
